@@ -164,6 +164,10 @@ section {
     margin-top: 10px;
   }
 
+  .content::-webkit-scrollbar{
+    width: 0px;
+  }
+
   .content img{
     border-radius: 10px;
     width: 200px !important;
