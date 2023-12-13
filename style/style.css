@@ -67,6 +67,8 @@ section {
   display: flex;
   justify-content: end;
   align-items: center;
+  box-sizing: border-box;
+  overflow-x: auto;
 }
 .list-gallery ul li {
   margin-left: 10px;
@@ -237,7 +239,6 @@ section {
   }
 
   .gallery .header h1 {
-    /* background-color: crimson; */
     color: white;
     font-size: 20px;
   }
@@ -251,6 +252,11 @@ section {
     padding: 3px 10px;
     list-style: none;
     display: inline-block;
+  }
+
+  .list-gallery ul{
+    display: flex;
+    overflow-x:auto;
   }
 
   .gallery {
