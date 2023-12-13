@@ -45,6 +45,10 @@ section {
   align-items: center;
 }
 
+.navbar-section-mobile{
+  display: none;
+}
+
 .gallery .header h1 {
   color: white;
 }
@@ -55,8 +59,8 @@ section {
 
 .gallery .btn {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: end;
+  align-items: start;
 
 }
 .list-gallery {
@@ -77,13 +81,13 @@ section {
 
 .gallery .btn a {
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
-  height: 40px;
+  font-weight: 600;
+  font-size: 10px;
+  height: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 160px;
+  width: 120px;
   border-radius: 8px;
   background-color: #fcaf17;
   text-decoration: none;
@@ -215,13 +219,13 @@ section {
     width: 100%;
   }
   
-  .navbar-section-mobile{
+  /* .navbar-section-mobile{
     display: none;
-  }
+  } */
 
   .navbar-section-mobile.active{
-    margin: 0px !important;
-    padding: 0px;
+    box-sizing: border-box;
+    padding: 10px !important;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -229,7 +233,7 @@ section {
     height:100%;
     color: white;
     background-color: #020202;
-    width: 84.7%;
+    width: 100%;
   }
 
   .gallery .header h1 {
@@ -267,12 +271,6 @@ section {
     display: none;
   }
 
-  .list-nav.active {
-    display: flex;
-    background-color: crimson;
-    position: relative;
-  }
-
   .btn-nav,
   .icon-nav {
     display: none;
@@ -287,8 +285,8 @@ section {
   }
 
   .content::-webkit-scrollbar{
-    width: 10px;
-    border-bottom: 2px solid #fcaf17;
+    width: 0px;
+    /* border-bottom: 2px solid #fcaf17; */
   }
 
   .content img{
