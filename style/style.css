@@ -402,6 +402,10 @@ section {
     /* border-bottom: 2px solid #fcaf17; */
   }
 
+  .list-gallery ul::-webkit-scrollbar {
+    width: 0px;
+    /* border-bottom: 2px solid #fcaf17; */
+  }
   .content img {
     border-radius: 10px;
     width: 200px !important;
@@ -466,7 +470,8 @@ section {
   }
 
   .paragraft-banner h2{
-    margin-top: -25px;
+    margin-top: -30px;
+    margin-left: 5px;
     line-height: 10px;
     font-size: 10px;
   }
@@ -475,7 +480,7 @@ section {
     font-size: 10px;
     font-weight: 700;
     box-sizing: border-box;
-    margin-top: -15px;
+    margin-top: -25px;
     border-radius: 5px;
     text-decoration: none;
     color: #020202;
