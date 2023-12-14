@@ -8,6 +8,8 @@
     <link rel="icon" href="img/navbar/Logo.png" type="x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="style" >
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
@@ -16,9 +18,9 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar" >
       <div class="logo">
-        <img src="img/navbar/Logo.png" alt="" srcset="" />
+        <img  src="img/navbar/Logo.png" alt="" srcset=""  />
       </div>
 
       <div class="list-nav">
@@ -29,9 +31,9 @@
         </ul>
       </div>
 
-      <div class="btn-nav">
+      <div  class="btn-nav">
         <div class="in-btn">
-          <a href="">Unduh Peluncur</a>
+          <a href="" >Unduh Peluncur</a>
         </div>
       </div>
 
@@ -53,7 +55,7 @@
       </div>
     </nav>
 
-    <section class="navbar-section-mobile">
+    <section class="navbar-section-mobile" >
       <div class="navbar-mobile">
         <div class="list-mobile">
           <ul class="list-dalam-mobile">
@@ -65,7 +67,7 @@
   
         <div class="btn-nav-mobile">
           <div class="in-btn-mobile">
-            <a href="">Unduh Peluncur</a>
+            <a href="" >Unduh Peluncur</a>
           </div>
         </div>
       </div>
@@ -99,8 +101,25 @@
       </div>
     </section>
 
-    <div class="banner">
-      <div class="card-banner">
+    <div class="berita">
+      <div class="berita-content">
+        <div class="text-berita">
+          <h1>Berita Terakhir</h1>
+        </div>
+      <div class="primary-image">
+        <img src="img/content/primary.png" alt="">
+      </div>
+      <div class="sub-image-satu">
+        <img src="img/content/satu.png" alt="">
+      </div>
+      <div class="sub-image-dua">
+        <img src="img/content/dua.png" alt="">
+      </div>
+    </div>
+    </div>
+
+    <div class="banner" >
+      <div class="card-banner" >
 
         <div class="content-banner">
 
@@ -130,5 +149,9 @@
     
 
     <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+      AOS.init();
+    </script>
+
   </body>
 </html>
