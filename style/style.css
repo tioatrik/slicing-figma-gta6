@@ -14,7 +14,7 @@ body {
 /* hero main */
 
 main  {
-  background-image: url("/slicinggta/img/hero/banner.png") !important;
+  background-image: url("../img/hero/banner.png") !important;
   width: 100%;
   height: 796px;
   background-position: center;
@@ -122,6 +122,91 @@ section {
   transition: all 0.3s ease;
   background-color: white;
 }
+
+/* banner */
+
+.banner{
+  background-color:#020202;
+  width: 100%;
+  height: 70vh;
+  padding: 10px 100px;
+  box-sizing: border-box;
+}
+
+.content-banner{
+  grid-template-areas: "logo-b h-b"
+  "p-b p-b"
+  "btn-b btn-b";
+  padding-top:40px ;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 150px 170px;
+  grid-template-rows: 120px 70px 80px;
+  gap: 10px;
+}
+
+.heading-banner{
+  grid-area: h-b;
+display: flex;
+align-items: center;
+}
+
+.logo-banner{
+  grid-area: logo-b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcaf17;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 25%;
+  border: 4px solid #020202;
+}
+
+.card-banner{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../img/banner/fundo.png");
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.paragraft-banner{
+  grid-area: p-b;
+}
+
+.img-banner{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.button-banner{
+  grid-area: btn-b;
+}
+
+.button-banner a{
+  text-decoration: none;
+  color: #020202;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 20px 40px;
+  background-color: #fcaf17;
+}
+
+.img-banner img{
+  align-items: center;
+  justify-items: center;
+  width: 70%;
+}
+
 
 /* mobile */
 
