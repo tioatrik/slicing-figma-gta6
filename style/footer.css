@@ -1,0 +1,136 @@
+footer{
+    background-color: #020202;
+    width: 100%;
+    height: 200px;
+    padding: 100px;
+    box-sizing: border-box;
+
+}
+
+footer .container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 70px 2fr 1fr;
+    grid-template-rows: 35px 35px;
+    grid-template-areas: "logo list icon"
+    "logo copyright icon";
+    color: white;
+}
+
+footer .container .logo{
+    grid-area: logo ;
+}
+
+footer .container .list{
+    grid-area: list;
+    display: flex;
+    align-items: center;
+    
+}
+
+footer .container .copyright{
+    grid-area: copyright;
+    padding-left: 30px;
+    color: #b1b1b1;
+    display: flex;
+    align-items: center;
+}
+
+footer .container .icon{
+    grid-area: icon;
+    display: flex;
+    justify-content: end;
+}
+
+footer .list ul{
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-left: 30px;
+}
+
+footer .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media only screen and (max-width: 600px){
+    footer{
+        background-color: #020202;
+        width: 100%;
+        height: 100px;
+        padding: 20px;
+        box-sizing: border-box;
+    
+    }
+    
+    footer .container{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: 40px 2fr 1fr;
+        grid-template-rows: 10px 10px;
+        grid-template-areas: "logo list icon"
+        "logo copyright icon";
+        color: white;
+        gap: 5px;
+    }
+    
+    footer .container .logo{
+        grid-area: logo ;
+    }
+    
+    footer .container .list{
+        grid-area: list;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    footer .container .copyright{
+        grid-area: copyright;
+        padding-left: 0px;
+        color: #b1b1b1;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+    }
+    
+    footer .container .icon{
+        grid-area: icon;
+        display: flex;
+        justify-content: end;
+    }
+    
+    footer .list ul{
+        font-size: 10px;
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        margin-left: 0px;
+        
+    }
+    
+    footer .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    footer .logo-m{
+        width: 30px;
+    }
+
+    footer .icon svg{
+        width: 15px;
+    }
+}

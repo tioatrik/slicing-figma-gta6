@@ -1,6 +1,7 @@
 @import url(navbar.css);
 /* @import url(mobile.css); */
 @import url(tablet.css);
+@import url(footer.css);
 
 * {
   margin: 0px;
@@ -372,6 +373,8 @@ section {
   justify-items: center;
   width: 660px;
 }
+
+
 
 /* mobile */
 
