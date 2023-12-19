@@ -134,7 +134,7 @@ section {
 .berita-content {
   width: 100%;
   display: grid;
-  grid-template-columns: 860px 260px;
+  grid-template-columns: 860px 300px;
   grid-template-rows: 50px 488px;
   grid-template-areas:
     "t-b t-b"
@@ -155,6 +155,7 @@ section {
   grid-template-columns: 860px 260px;
   grid-template-rows: 207px 207px;
   gap: 40px;
+  width: 100%;
 }
 .primary-image {
   border-radius: 16px;
@@ -266,14 +267,16 @@ section {
 
 .banner {
   width: 100%;
-  height: 535px;
-  padding: 10px 100px;
+  height: 480px;
+  padding: 0px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .content-banner {
-  margin-top: 50px;
-  margin-left: 100px;
+  margin-top: 30px;
+  margin-left: 30px;
   grid-template-areas:
     "logo-b h-b"
     "p-b p-b"
@@ -309,8 +312,8 @@ section {
 }
 
 .card-banner {
-  width: 100%;
-  height: 100%;
+  width: 77%;
+  height: 90%;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -370,7 +373,7 @@ section {
 .img-banner img {
   align-items: center;
   justify-items: center;
-  width: 660px;
+  width: 500px;
 }
 
 
@@ -632,6 +635,7 @@ section {
   .card-banner {
     width: 100%;
     border-radius: 10px;
+    height: 100%;
   }
   
   .content-banner {
