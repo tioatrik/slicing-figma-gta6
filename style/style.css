@@ -9,6 +9,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #101010;
 }
 
 /* hero main */
@@ -26,7 +27,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #020202;
+  background-color: #101010;
   height: 70vh;
   padding: 10px 100px;
 }
@@ -124,60 +125,146 @@ section {
 
 /* gallery content */
 .berita {
-  width: 100%;
-  height: 600px;
-  padding: 10px 120px;
+  height: 100vh;
+  display: grid !important;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
-  background-color: #020202;
 }
 .berita-content {
-  grid-template-areas:
-    "a-c a-c"
-    "i-p i-s"
-    "i-p i-d";
+  width: 100%;
   display: grid;
-  grid-template-columns: 1fr 350px;
-  grid-template-rows: 50px 235px 235px;
+  grid-template-columns: 860px 260px;
+  grid-template-rows: 50px 488px;
+  grid-template-areas:
+    "t-b t-b"
+    "i-b i-b";
 }
 
 .text-berita {
-  grid-area: a-c;
+  grid-area: t-b;
   color: white;
 }
 
+.berita .berita-content .image-berita {
+  grid-area: i-b;
+  display: grid;
+  grid-template-areas:
+    "c-kiri c-tengah"
+    "c-kiri c-kanan";
+  grid-template-columns: 860px 260px;
+  grid-template-rows: 207px 207px;
+  gap: 40px;
+}
 .primary-image {
-  grid-area: i-p;
+  border-radius: 16px;
+  display: flex;
+  align-items: end;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(../img/content/primary.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: c-kiri;
+  transition: transform 0.3s ease-in-out;
 }
 
 .sub-image-satu {
-  display: grid;
-  justify-content: end;
-  grid-area: i-s;
+  border-radius: 16px;
+
+  display: flex;
+  align-items: end;
+  background-image: url(../img/content/satu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-area: c-tengah;
+  transition: transform 0.3s ease-in-out;
 }
 
 .sub-image-dua {
+  border-radius: 16px;
+  display: flex;
+  align-items: end;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../img/content/dua.png);
+  grid-area: c-kanan;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sub-image-dua:hover,
+.sub-image-satu:hover {
+  transform: scale(1.02);
+}
+.primary-image:hover {
+  transform: scale(1.01);
+}
+
+.primary-image .block-content {
+  border-radius: 0px 0px 16px 16px;
+  width: 100%;
+  height: 130px;
+  background-color: black;
+  color: white;
   display: grid;
-  justify-content: end;
-  grid-area: i-d;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 30px;
 }
 
-.primary-image img{
-  width: 910px;
+.primary-image .block-content h1 {
+  padding-top: 10px;
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 48px */
+  letter-spacing: -0.352px;
 }
 
-.sub-image-dua img {
-  width: 345px;
+.primary-image .block-content p {
+  color: #797979;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 24px */
+  letter-spacing: -0.176px;
 }
 
-.sub-image-satu img{
-  width: 345px;
+.sub-block-content {
+  color: white;
+  border-radius: 0px 0px 16px 16px;
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
+.sub-block-content h1 {
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 19.5px */
+  letter-spacing: -0.143px;
+}
+
+.sub-block-content p {
+  margin-top: 5px;
+  color: #797979;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%; /* 18px */
+  letter-spacing: -0.132px;
+}
 
 /* banner */
 
 .banner {
-  background-color: #020202;
   width: 100%;
   height: 535px;
   padding: 10px 100px;
@@ -380,10 +467,6 @@ section {
     width: 100%;
   }
 
-  /* .navbar-section-mobile{
-    display: none;
-  } */
-
   .navbar-section-mobile.active {
     box-sizing: border-box;
     padding: 10px !important;
@@ -396,6 +479,8 @@ section {
     background-color: #020202;
     width: 100%;
   }
+
+  /* gallery */
 
   .gallery .header h1 {
     color: white;
@@ -462,6 +547,64 @@ section {
     margin-right: 10px;
   }
 
+  /* berita */
+    .berita{
+      height: 35vh;
+      padding: 0px 20px;
+    }
+
+    .text-berita{
+      font-size: 11px;
+      margin-bottom: 10px;
+    }
+    .berita-content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      box-sizing: border-box;
+    }
+  
+    .berita .berita-content .image-berita {
+      display: flex;
+      flex-direction: row;
+      overflow-x: auto;
+      gap: 10px;
+    }
+  
+    .primary-image,
+    .sub-image-satu,
+    .sub-image-dua {
+      flex: 0 0 auto;
+      width: 100%;
+      margin-right: 0px;
+      height: 200px; /* Sesuaikan margin antar gambar */
+    }
+    
+    .block-content,.sub-block-content{
+      height: 80px !important;
+      padding: 0px !important;
+      margin: 0px !important;
+      box-sizing: border-box;
+    }
+   
+    .primary-image,.sub-image-satu,.sub-image-dua:hover{
+      transform: scale(1) !important;
+    }
+
+    .image-berita h1{
+      font-size: 13px !important;
+      padding-left: 10px;
+    }
+
+    .image-berita .sub-block-content{
+      padding-top: 10px !important;
+    }
+
+    .image-berita p{
+      font-size: 10px !important;
+      padding-left: 10px;
+    }
+
   /* banner */
 
   .content-banner {
@@ -481,6 +624,7 @@ section {
   .card-banner {
     width: 100%;
   }
+  
   .content-banner {
     padding-left: 10px;
   }
@@ -546,64 +690,5 @@ section {
       0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
 
-  /* berita */
-  .berita {
-    width: 100%;
-    height: 400px;
-    padding: 0px;
-    box-sizing: border-box;
-    background-color: #020202;
-    height: 30vh;
-    padding: 0px 15px;
-  }
-  .berita-content {
-    grid-template-areas:
-      "a-c a-c"
-      "i-p i-s"
-      "i-p i-d";
-    display: grid;
-    grid-template-columns: 280px 1fr;
-    grid-template-rows: 35px 70px 70px;
-    gap: 5px;
-  }
-
-  /* .berita-content img{
-    border-radius:5px ;
-  } */
-  
-  .text-berita {
-    grid-area: a-c;
-    color: white;
-  }
-  
-  .primary-image {
-    grid-area: i-p;
-  }
-  
-  .sub-image-satu {
-    display: grid;
-    justify-content: end;
-    grid-area: i-s;
-  }
-  
-  .sub-image-dua {
-    display: grid;
-    justify-content: end;
-    grid-area: i-d;
-  }
-  
-  .primary-image img{
-    width: 100%;
-  }
-  
-  .sub-image-dua img {
-    width: 100%;
-    height:87px;
-  }
-  
-  .sub-image-satu img{
-    width: 100%;
-    height: 90px;
-  }
   
 }
