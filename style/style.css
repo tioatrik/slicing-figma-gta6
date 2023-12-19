@@ -27,7 +27,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #101010;
+  background-color: inherit !important;
   height: 70vh;
   padding: 10px 100px;
 }
@@ -384,9 +384,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #020202;
     height: 100%;
-    padding: 10px 30px !important;
+    padding: 0px 30px !important;
   }
 
   nav {
@@ -485,6 +484,7 @@ section {
   .gallery .header h1 {
     color: white;
     font-size: 20px;
+    
   }
 
   .list-gallery ul li {
@@ -549,8 +549,8 @@ section {
 
   /* berita */
     .berita{
-      height: 35vh;
-      padding: 0px 20px;
+      height: 30vh;
+      padding: 0px 25px;
     }
 
     .text-berita{
@@ -570,6 +570,10 @@ section {
       overflow-x: auto;
       gap: 10px;
     }
+
+    .image-berita::-webkit-scrollbar {
+      width: 0px;
+    }
   
     .primary-image,
     .sub-image-satu,
@@ -577,7 +581,8 @@ section {
       flex: 0 0 auto;
       width: 100%;
       margin-right: 0px;
-      height: 200px; /* Sesuaikan margin antar gambar */
+      height: 200px;
+      border-radius: 10px; /* Sesuaikan margin antar gambar */
     }
     
     .block-content,.sub-block-content{
@@ -585,6 +590,7 @@ section {
       padding: 0px !important;
       margin: 0px !important;
       box-sizing: border-box;
+      border-radius: 0px 0px 10px 10px !important;
     }
    
     .primary-image,.sub-image-satu,.sub-image-dua:hover{
@@ -623,6 +629,7 @@ section {
 
   .card-banner {
     width: 100%;
+    border-radius: 10px;
   }
   
   .content-banner {
@@ -630,13 +637,14 @@ section {
   }
 
   .banner {
-    padding: 20px;
+    padding: 25px;
     margin: 0px;
-    height: 200px;
+    height: 205px;
+    
   }
 
   .img-banner img {
-    width: 180px;
+    width: 170px;
   }
 
   .logo-banner {
